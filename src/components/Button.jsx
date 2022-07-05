@@ -1,5 +1,5 @@
-export default function Button(){
+export default function Button({color,text, onClick}){
     return(
-        <div>Hello There you go</div>
+        <button  style={{background:color}} onClick={onClick} className="btn">{text}</button>
         )
 }

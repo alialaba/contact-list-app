@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --text-lg-color: #eee;
+  --bkg-dk-color: #121212;
+
+  --text-dk-color: #222;
+    --bkg-lg-color: #fff;
+}
 body {
  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,9 +25,20 @@ code {
     monospace;
 }
 
+.center{
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .container{
   max-width: 500px;
-  /* width: 90%; */
   min-height: 300px;
   margin: 30px auto;
   border: 1px solid steelblue;
@@ -30,9 +48,6 @@ code {
 
 }
 .header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem;  
   margin-bottom: 2rem;
 }
@@ -57,5 +72,21 @@ code {
   width: 100%;
   padding: 7px 14px;
  font-size: 20px;
-  
+}
+.contactlist{
+  background-color: var(--bkg-lg-color);
+  color:var(--text-dk-color);
+  border-radius:  15px 15px 0 0 ;
+  box-shadow: inset rgb(0 0 0 / 11%) 0 0 0 1px;
+  /* margin: 0 1rem; */
+}
+.contact{
+ 
+  margin-bottom: 10px;
+  cursor:pointer;
+  padding: 10px;
+  border-bottom: .5px solid rgb(0 0 0 / 11%);
+}
+ul{
+  list-style: none;
 }

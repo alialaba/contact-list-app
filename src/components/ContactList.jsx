@@ -1,6 +1,7 @@
-export default function ContactList(){
+import Contact from "./Contact"
+export default function ContactList({contacts, onExpand}){
     return(
-    <div></div>
+    <div className="contactlist">{contacts.map((contact)=><Contact contact={contact} key={contact.id} onExpand={onExpand}/>)}</div>
     )
     
 }

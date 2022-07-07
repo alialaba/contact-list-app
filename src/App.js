@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
@@ -40,19 +41,22 @@ export default function App() {
   ])
 
 const toggleExpandContact =(id)=>{
-console.log(id);
-
 setContacts(contacts.map((contact)=> contact.id === id ? {...contact, open:!contact.open}: contact))
 }
 
   return (
-    <div className="container">
+    <main>
+        {/* <Route path="expenses" element={<Expenses />} /> */}
+        <h1 className="center">Contact Manager</h1>
+        <div className="container">
+        {/* <Header/> */}
+          <Routes>
+            <Route path="/"  element={<ContactList contacts={contacts} onExpand={toggleExpandContact}/>}></Route>
+            <Route path="/AddContact" element={<AddContact />}/>
     
-    <Header/>
-    <AddContact />
-    <ContactList contacts={contacts} onExpand={toggleExpandContact}/>
-
-    </div>
+        </Routes>
+        </div>
+    </main>
   );
 }
 

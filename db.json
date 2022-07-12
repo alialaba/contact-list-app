@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    
+      {
+        "id":1,
+        "name":"Adewale",
+        "open":false,
+        "email":"adewale@gmail.com",
+        "phone":2348062738748
+  
+      },
+      {
+        "id":2,
+        "name":"Alaba",
+        "open":false,
+        "email":"aliaba@gmail.com",
+        "phone":2348063989994
+  
+      },
+      {
+        "id":3,
+        "name":"Idowu",
+        "open":false,
+        "email":"idowu@gmail.com",
+        "phone":2348139084940
+  
+      },
+      {
+        "id":4,
+        "name":"Anjorin",
+        "open":false,
+        "email":"anjorin@gmail.com",
+        "phone":2348063619004
+  
+      }
+    
+  ]
+  
+}

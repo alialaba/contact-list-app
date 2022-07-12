@@ -6,40 +6,7 @@ import ContactList from "./components/ContactList";
 import ContactDetail from "./components/ContactDetail";
 
 export default function App() {
-  const [contacts, setContacts]= useState([
-    {
-      id:1,
-      name:"Adewale",
-      open:false,
-      email:"adewale@gmail.com",
-      phone:2348062738748,
-
-    },
-    {
-      id:2,
-      name:"Alaba",
-      open:false,
-      email:"aliaba@gmail.com",
-      phone:2348063989994,
-
-    },
-    {
-      id:3,
-      name:"Idowu",
-      open:false,
-      email:"idowu@gmail.com",
-      phone:2348139084940,
-
-    },
-    {
-      id:4,
-      name:"Anjorin",
-      open:false,
-      email:"anjorin@gmail.com",
-      phone:2348063619004,
-
-    }
-  ])
+  const [contacts, setContacts]= useState([])
 
 const toggleExpandContact =(id)=>{
 setContacts(contacts.map((contact)=> contact.id === id ? {...contact, open:!contact.open}: contact))

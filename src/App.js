@@ -3,15 +3,16 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
+import ContactDetail from "./components/ContactDetail";
 
 export default function App() {
   const [contacts, setContacts]= useState([
     {
       id:1,
-      name:"Alaba",
+      name:"Adewale",
       open:false,
-      email:"aliaba@gmail.com",
-      phone:2348063611994,
+      email:"adewale@gmail.com",
+      phone:2348062738748,
 
     },
     {
@@ -19,7 +20,7 @@ export default function App() {
       name:"Alaba",
       open:false,
       email:"aliaba@gmail.com",
-      phone:2348063611994,
+      phone:2348063989994,
 
     },
     {
@@ -27,15 +28,15 @@ export default function App() {
       name:"Idowu",
       open:false,
       email:"idowu@gmail.com",
-      phone:2348063611994,
+      phone:2348139084940,
 
     },
     {
       id:4,
-      name:"Adewale",
+      name:"Anjorin",
       open:false,
-      email:"adewaale@gmail.com",
-      phone:2348063611994,
+      email:"anjorin@gmail.com",
+      phone:2348063619004,
 
     }
   ])
@@ -53,6 +54,8 @@ setContacts(contacts.map((contact)=> contact.id === id ? {...contact, open:!cont
           <Routes>
             <Route path="/"  element={<ContactList contacts={contacts} onExpand={toggleExpandContact}/>}></Route>
             <Route path="/AddContact" element={<AddContact />}/>
+            {/* direct to the individual contact unique address display */}
+            <Route path="/ContactDetail/:id" element={<ContactDetail/>}/>
     
         </Routes>
         </div>

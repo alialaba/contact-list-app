@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Header from "./components/Header";
 import AddContact from "./components/AddContact";
@@ -11,6 +11,28 @@ export default function App() {
 const toggleExpandContact =(id)=>{
 setContacts(contacts.map((contact)=> contact.id === id ? {...contact, open:!contact.open}: contact))
 }
+
+
+useEffect(()=>{
+  const getContacts = async()=>{
+    const contactsFromServer = await fetchContacts();
+    setContacts(contactsFromServer)
+    console.log(contactsFromServer);
+
+  
+  }
+  getContacts()
+},[])
+
+
+//fetch contact
+const fetchContacts = async()=>{
+  const res = await fetch("http://localhost:5000/contacts");
+  const data = await res.json();
+  return data
+
+}
+
 
   return (
     <main>

@@ -33,11 +33,12 @@ const fetchContacts = async()=>{
 
 //delete task
 const deleteTask = async(id)=>{
-  await fetch(`http://localhost:5000/contacts${id}`,{
+  await fetch(`http://localhost:5000/contacts/${id}`,{
     method:"DELETE"
   })
 setContacts(contacts.filter((contact)=> contact.id !== id))
 }
+
 //add contact
 const addContact = async(contact)=>{
 // console.log(data)

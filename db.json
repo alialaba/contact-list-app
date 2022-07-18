@@ -1,39 +1,50 @@
 {
   "contacts": [
-    
-      {
-        "id":1,
-        "name":"Adewale",
-        "open":false,
-        "email":"adewale@gmail.com",
-        "phone":2348062738748
-  
-      },
-      {
-        "id":2,
-        "name":"Alaba",
-        "open":false,
-        "email":"aliaba@gmail.com",
-        "phone":2348063989994
-  
-      },
-      {
-        "id":3,
-        "name":"Idowu",
-        "open":false,
-        "email":"idowu@gmail.com",
-        "phone":2348139084940
-  
-      },
-      {
-        "id":4,
-        "name":"Anjorin",
-        "open":false,
-        "email":"anjorin@gmail.com",
-        "phone":2348063619004
-  
-      }
-    
+    {
+      "id": 1,
+      "name": "Adewale",
+      "open": false,
+      "email": "adewale@gmail.com",
+      "phone": 2348062738748
+    },
+    {
+      "id": 2,
+      "name": "Alaba",
+      "open": false,
+      "email": "aliaba@gmail.com",
+      "phone": 2348063989994
+    },
+    {
+      "id": 3,
+      "name": "Idowu",
+      "open": false,
+      "email": "idowu@gmail.com",
+      "phone": 2348139084940
+    },
+    {
+      "id": 4,
+      "name": "Anjorin",
+      "open": false,
+      "email": "anjorin@gmail.com",
+      "phone": 2348063619004
+    },
+    {
+      "name": "Aliyu",
+      "email": "alidodocode@gmail.com",
+      "phone": "234806361904",
+      "id": 5
+    },
+    {
+      "name": "maryam",
+      "email": "maryamabdul@gmail.com",
+      "phone": "094847774884",
+      "id": 6
+    },
+    {
+      "name": "fmmfmf",
+      "email": "f;;;f",
+      "phone": "23480639495jj",
+      "id": 7
+    }
   ]
-  
 }

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import {FaInfoCircle} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
 import {FaTrashAlt} from "react-icons/fa";
-import {FaRegCommentAlt} from "react-icons/fa"
 import {FaRegEdit} from "react-icons/fa"
 export default function Contact({contact, onExpand, onDelete}){
     return(

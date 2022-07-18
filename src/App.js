@@ -16,9 +16,7 @@ setContacts(contacts.map((contact)=> contact.id === id ? {...contact, open:!cont
 useEffect(()=>{
   const getContacts = async()=>{
     const contactsFromServer = await fetchContacts();
-    setContacts(contactsFromServer)
-    console.log(contactsFromServer);
-
+    setContacts(contactsFromServer);
   
   }
   getContacts()
@@ -40,7 +38,21 @@ const deleteTask = async(id)=>{
   })
 setContacts(contacts.filter((contact)=> contact.id !== id))
 }
+//add contact
+const addContact = async(contact)=>{
+// console.log(data)
+const res = await fetch("http://localhost:5000/contacts",{
+  // Simple POST request with a JSON body using fetch
+  method:"POST",
+  headers:{ 'Content-Type': 'application/json' },
 
+  body: JSON.stringify(contact)
+})
+
+const data = await res.json();
+//update contact state with initial values and new value 
+setContacts([...contacts, data])
+}
 
   return (
     <main>
@@ -50,7 +62,7 @@ setContacts(contacts.filter((contact)=> contact.id !== id))
         {/* <Header/> */}
           <Routes>
             <Route path="/"  element={contacts.length > 0 ? (<ContactList contacts={contacts} onExpand={toggleExpandContact} onDelete={deleteTask}/>) : ("No Contact to show") }></Route>
-            <Route path="/AddContact" element={<AddContact />}/>
+            <Route path="/AddContact" element={<AddContact  addContact={addContact}/>}/>
             {/* direct to the individual contact unique address display */}
             <Route path="/ContactDetail/:id" element={<ContactDetail/>}/>
     

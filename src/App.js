@@ -33,6 +33,14 @@ const fetchContacts = async()=>{
 
 }
 
+//delete task
+const deleteTask = async(id)=>{
+  await fetch(`http://localhost:5000/contacts${id}`,{
+    method:"DELETE"
+  })
+setContacts(contacts.filter((contact)=> contact.id !== id))
+}
+
 
   return (
     <main>
@@ -41,7 +49,7 @@ const fetchContacts = async()=>{
         <div className="container">
         {/* <Header/> */}
           <Routes>
-            <Route path="/"  element={<ContactList contacts={contacts} onExpand={toggleExpandContact}/>}></Route>
+            <Route path="/"  element={contacts.length > 0 ? <ContactList contacts={contacts} onExpand={toggleExpandContact} onDelete={deleteTask}/>: "No Contact is avaiable" }></Route>
             <Route path="/AddContact" element={<AddContact />}/>
             {/* direct to the individual contact unique address display */}
             <Route path="/ContactDetail/:id" element={<ContactDetail/>}/>

@@ -49,7 +49,7 @@ setContacts(contacts.filter((contact)=> contact.id !== id))
         <div className="container">
         {/* <Header/> */}
           <Routes>
-            <Route path="/"  element={contacts.length > 0 ? <ContactList contacts={contacts} onExpand={toggleExpandContact} onDelete={deleteTask}/>: "No Contact is avaiable" }></Route>
+            <Route path="/"  element={contacts.length > 0 ? (<ContactList contacts={contacts} onExpand={toggleExpandContact} onDelete={deleteTask}/>) : ("No Contact to show") }></Route>
             <Route path="/AddContact" element={<AddContact />}/>
             {/* direct to the individual contact unique address display */}
             <Route path="/ContactDetail/:id" element={<ContactDetail/>}/>

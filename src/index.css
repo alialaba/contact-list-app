@@ -43,10 +43,10 @@ code {
   margin: 30px auto;
   border: 1px solid steelblue;
   border-radius: 3px;
-  overflow: auto;
-  
-
+  /* overflow-y: scroll;
+  scrollbar-width: thin; */
 }
+
 .header{
   padding: 1rem;  
   margin-bottom: 2rem;
@@ -77,11 +77,33 @@ code {
   background-color: var(--bkg-lg-color);
   color:var(--text-dk-color);
   border-radius:  15px 15px 0 0 ;
+  max-height: 500px;
   box-shadow: inset rgb(0 0 0 / 11%) 0 0 0 1px;
-  /* margin: 0 1rem; */
+  
+  /* style container scrollbar */
+  overflow-y: scroll;
+  scrollbar-width: thin;s
+  
 }
-.contact{
+/* style container scrollbar */
+.contactlist::-webkit-scrollbar {
+  width: 12px;
+
+}
+.contactlist::-webkit-scrollbar-track{
+  background-color: #e4e4e4;
+}
+.contactlist::-webkit-scrollbar-thumb{
+  border-radius: 100px;
+  border: 6px solid rgba(0, 0, 0, 0.18);
+  border-left: 0;
+  border-right: 0;
+  background-color: #8070d4;
+  height: 10px;
  
+}
+/* end style container scrollbar */
+.contact{
   margin-bottom: 10px;
   cursor:pointer;
   padding: 10px;

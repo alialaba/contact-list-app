@@ -15,13 +15,6 @@
       "phone": 2348063989994
     },
     {
-      "id": 3,
-      "name": "Idowu",
-      "open": false,
-      "email": "idowu@gmail.com",
-      "phone": 2348139084940
-    },
-    {
       "id": 4,
       "name": "Anjorin",
       "open": false,
@@ -33,6 +26,24 @@
       "email": "alidodocode@gmail.com",
       "phone": "234806361904",
       "id": 5
+    },
+    {
+      "name": "maryam",
+      "email": "maryamabdul@gmail.com",
+      "phone": "234806361904",
+      "id": 6
+    },
+    {
+      "name": "nfnnf",
+      "email": "fdmfdf",
+      "phone": "fdfd",
+      "id": 7
+    },
+    {
+      "name": "ffl;fd",
+      "email": "fdffl",
+      "phone": "fdf'dfd'",
+      "id": 8
     }
   ]
 }

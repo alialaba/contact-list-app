@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import {  useNavigate } from 'react-router-dom';
 
 export default function AddContact({addContact}){
     const [formData, setFormData] = useState({
@@ -8,6 +9,9 @@ export default function AddContact({addContact}){
         phone:"",
         // open: false,
     })
+
+    //hook for redirect/ navigation
+    const navigate = useNavigate()
 
 
     // handle change
@@ -28,7 +32,6 @@ export default function AddContact({addContact}){
         alert("please fill out the field")
         return;
        }
-       console.log("successfully")
 
        //add new input datas on submiting form
        addContact(formData)
@@ -40,7 +43,8 @@ export default function AddContact({addContact}){
         phone:"",
         // open: false,
        })
-
+      //redirect back to home page
+      navigate("/")
     }
     return(
         <form className="add-form" onSubmit={handleSubmit}>

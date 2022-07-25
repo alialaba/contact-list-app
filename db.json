@@ -2,48 +2,45 @@
   "contacts": [
     {
       "id": 1,
-      "name": "Adewale",
-      "open": false,
+      "name": "Adewale Jamiu",
       "email": "adewale@gmail.com",
       "phone": 2348062738748
     },
     {
       "id": 2,
-      "name": "Alaba",
-      "open": false,
-      "email": "aliaba@gmail.com",
-      "phone": 2348063989994
+      "name": "Alaba Aliyu",
+      "email": "alialaba@gmail.com",
+      "phone": "2348063891994"
     },
     {
-      "id": 4,
-      "name": "Anjorin",
-      "open": false,
-      "email": "anjorin@gmail.com",
-      "phone": 2348063619004
-    },
-    {
-      "name": "Aliyu",
+      "id": 5,
+      "name": "Aliyu Abdul Ganiy",
       "email": "alidodocode@gmail.com",
-      "phone": "234806361904",
-      "id": 5
+      "phone": "234806361904"
     },
     {
-      "name": "maryam",
+      "id": 6,
+      "name": "maryam AbdulGaniy",
       "email": "maryamabdul@gmail.com",
-      "phone": "234806361904",
-      "id": 6
+      "phone": "234806361904"
     },
     {
-      "name": "nfnnf",
-      "email": "fdmfdf",
-      "phone": "fdfd",
+      "name": "Ahmed Muhammad",
+      "email": "ahmedm@gmail.com",
+      "phone": "080219873819",
       "id": 7
     },
     {
-      "name": "ffl;fd",
-      "email": "fdffl",
-      "phone": "fdf'dfd'",
+      "name": "Jabir Adamu",
+      "email": "jabiradamu@gmail.com",
+      "phone": "081389300102",
       "id": 8
+    },
+    {
+      "name": "Muhammad Betto",
+      "email": "mbetto@gmail.com",
+      "phone": "07049582913",
+      "id": 9
     }
   ]
 }

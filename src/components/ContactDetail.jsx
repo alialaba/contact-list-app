@@ -2,8 +2,10 @@ import { Link, useLocation } from 'react-router-dom'
 import Button from './Button';
 export default function ContactDetail({contact}){
     const location = useLocation();
-console.log(contact)
-console.log(location);
+// console.log(contact)
+// console.log(location);
+
+//from state pass to contact.js  which allow individual data to be passed
 var contact = location.state?.contact;
 console.log(contact.name)
     return (

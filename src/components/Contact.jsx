@@ -18,8 +18,8 @@ export default function Contact({contact, onExpand, onDelete}){
              <ul className="flex">
              <li><FaPhoneAlt/></li>
                 <li onClick={()=> onDelete(contact.id)}><FaTrashAlt /></li>
-                <li><FaRegEdit/></li>
-                {/* /ContactDetail/${contact.id} redirect to an individual contact details */}
+                <Link to={`/EditContact`} state={{contact:contact}}><li ><FaRegEdit/></li></Link>
+                {/* /ContactDetail/${contact.id} redirect to an individual contact details and state pass data information */}
                <Link to={`/ContactDetail/${contact.id}`} state={{contact:contact}} > <li><FaInfoCircle/></li></Link>
              </ul>
             

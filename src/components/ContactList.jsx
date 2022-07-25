@@ -3,13 +3,13 @@
 import Contact from "./Contact";
 import Header from "./Header";
 
-export default function ContactList({contacts, onExpand, onDelete={onDelete}}){
+export default function ContactList({contacts, onExpand, onDelete }){
     return(
     <>
      <Header/>
     <section className="contactlist">
         
-        {contacts.map((contact)=><Contact contact={contact} key={contact.id} onExpand={onExpand} onDelete={onDelete}/>)}
+        {contacts.map((contact)=><Contact contact={contact} key={contact.id} onExpand={onExpand} onDelete={onDelete} />)}
     </section>
     </>
     )

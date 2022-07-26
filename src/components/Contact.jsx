@@ -2,19 +2,23 @@ import { Link } from "react-router-dom";
 import {FaInfoCircle} from "react-icons/fa";
 import {FaPhoneAlt} from "react-icons/fa";
 import {FaTrashAlt} from "react-icons/fa";
-import {FaRegEdit} from "react-icons/fa"
+import {FaRegEdit} from "react-icons/fa";
+import {FaUserCircle} from "react-icons/fa"
+
 export default function Contact({contact, onExpand, onDelete}){
     return(
         <div className="contact" onClick={()=> onExpand(contact.id)}>
           
-             <div>
+            <div className="flex-margin">
+              <FaUserCircle className="user-icon"/>
+            <div>
                <h4>{contact.name}</h4>
-               <p>{contact.phone}</p> 
+            </div>
             </div>
 
             {contact.open  &&
         <div className="contact-footer">
-            <p className="center"> {contact.email}</p>
+            <p className="center">Phone: {contact.phone}</p>
              <ul className="flex">
              <li><FaPhoneAlt/></li>
                 <li onClick={()=> onDelete(contact.id)}><FaTrashAlt /></li>

@@ -14,6 +14,7 @@ console.log(contact.name)
             <div className="center">
             <h2>{contact.name}</h2>
             <p>{contact.phone}</p>
+            <p>{contact.email}</p>
             
             </div>
             <Link to="/">

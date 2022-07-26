@@ -46,12 +46,12 @@ console.log(contact.id)
         editContact(editedData);
         //redirect to home 
         navigate("/")
-        alert("Edited Successfull")
+        alert("Edited Successfully")
     }
 
     return(
-        <form className="add-form" onSubmit={handleSubmit} >
-            <h1>Edit</h1>
+        <form className="edit-form" onSubmit={handleSubmit} >
+            <h1>Edit Contact</h1>
            
             <div className="form-control">
                 <label>Name</label>

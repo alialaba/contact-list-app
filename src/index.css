@@ -35,7 +35,14 @@ code {
   justify-content: space-between;
   align-items: center;
 }
-
+.flex-margin{
+  display: flex;
+  align-items: center;
+}
+.user-icon{
+  margin-right: 20px;
+  font-size: 30px;
+}
 
 .container{
   max-width: 500px;
@@ -60,9 +67,14 @@ code {
   cursor: pointer;
   color: #000;
 }
+.add-form, .edit-form{
+  margin: 20px;
+}
+.add-form h1, .edit-form h1{
+  margin-bottom: 20px;
+}
 .form-control{
-  margin: 20px ;
-  /* padding: 20px; */
+  margin-bottom: 20px ;
 }
 .form-control label{
   display: block;
@@ -72,6 +84,7 @@ code {
   width: 100%;
   padding: 7px 14px;
  font-size: 20px;
+
 }
 .contactlist{
   background-color: var(--bkg-lg-color);
@@ -121,9 +134,13 @@ ul{
   margin: 40px auto;
 }
 .contact-detail{
-  /* background-color: var(--bkg-dk-color); */
+  background-color: var(--bkg-lg-color);
+  color:var(--text-dk-color);
+  border-radius:  15px 15px 0 0 ;
+  /* max-height: 500px; */
+  box-shadow: inset rgb(0 0 0 / 11%) 0 0 0 1px;
   padding: 1rem;
-  margin: 0 1rem;
+  margin: 2rem;
 
 }
 .plus-circle{

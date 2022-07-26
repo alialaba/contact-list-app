@@ -48,6 +48,7 @@ export default function AddContact({addContact}){
     }
     return(
         <form className="add-form" onSubmit={handleSubmit}>
+            <h1>Add Contact</h1>
             <div className="form-control">
                 <label>Name</label>
                 <input 

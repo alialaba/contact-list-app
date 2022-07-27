@@ -2,15 +2,9 @@
   "contacts": [
     {
       "id": 1,
-      "name": "Adewale Jamiu",
+      "name": "Adewale Jamiu ademola",
       "email": "adewale@gmail.com",
       "phone": 2348062738748
-    },
-    {
-      "id": 2,
-      "name": "Alaba Aliyu",
-      "email": "alialaba@gmail.com",
-      "phone": "2348063891994"
     },
     {
       "id": 5,
@@ -19,16 +13,10 @@
       "phone": "234806361904"
     },
     {
-      "id": 6,
-      "name": "maryam AbdulGaniy",
-      "email": "maryamabdul@gmail.com",
-      "phone": "234806361904"
-    },
-    {
-      "name": "Ahmed Muhammad",
-      "email": "ahmedm@gmail.com",
-      "phone": "080219873819",
-      "id": 7
+      "id": 7,
+      "name": "Fatima Ayomide",
+      "email": "fatimaayo@gmail.com",
+      "phone": "080719873819"
     },
     {
       "name": "Jabir Adamu",

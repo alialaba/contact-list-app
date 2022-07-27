@@ -5,6 +5,7 @@ import AddContact from "./components/AddContact";
 import ContactList from "./components/ContactList";
 import ContactDetail from "./components/ContactDetail";
 import EditContact from "./components/EditContact";
+import Popup from "./components/Popup";
 
 export default function App() {
   const [contacts, setContacts]= useState([])
@@ -87,6 +88,14 @@ setContacts(contacts.map((contact)=> contact.id === id ? {...data}: contact))
   
 }
 
+/* const firstLetter = async()=>{
+
+  const res = await fetch("http://localhost:5000/contacts");
+  const data = await res.json();
+  console.log(data)
+  
+
+}*/
 
   return (
     <main>
@@ -102,6 +111,7 @@ setContacts(contacts.map((contact)=> contact.id === id ? {...data}: contact))
             <Route path="/ContactDetail/:id" element={<ContactDetail/>}/>
     
         </Routes>
+        <Popup/>
         </div>
     </main>
   );

@@ -8,9 +8,16 @@ export default function ContactDetail({contact}){
 //from state pass to contact.js  which allow individual data to be passed
 var contact = location.state?.contact;
 console.log(contact.name)
+
+
+//get firstletter from contact name
+const firstLetter = contact.name.charAt(0)
+
     return (
         <section  className="contact-detail">
-            <div className="circle"></div>
+            <div className="circle">
+                <h2>{firstLetter.toUpperCase() }</h2>
+            </div>
             <div className="center">
             <h2>{contact.name}</h2>
             <p>{contact.phone}</p>
